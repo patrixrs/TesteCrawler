@@ -3,17 +3,53 @@ package Classes;
  * @author patrixrs <patrix.pfr@gmail.com>
  */
 public class Imoveis {
-    private String bairro, rua, cidade, descricao, num;
+    private String preco, bairro, rua, cidade, descricao, num, quartos, vagas, tamanho;    
 
     public Imoveis() {
     }    
     
-    public Imoveis(String bairro, String rua, String num, String cidade, String descricao){
+    public Imoveis(String preco, String quartos, String vagas, String tamanho, String bairro, String rua, String num, String cidade, String descricao){
+        this.preco = preco;
+        this.quartos = quartos;
+        this.vagas = vagas;
+        this.tamanho = tamanho;
         this.bairro = bairro;
         this.rua = rua;
         this.num = num;
         this.cidade = cidade;
         this.descricao = descricao;        
+    }
+
+    public String getQuartos() {
+        return quartos;
+    }
+
+    public void setQuartos(String quartos) {
+        this.quartos = quartos;
+    }
+
+    public String getVagas() {
+        return vagas;
+    }
+
+    public void setVagas(String vagas) {
+        this.vagas = vagas;
+    }
+
+    public String getTamanho() {
+        return tamanho;
+    }
+
+    public void setTamanho(String tamanho) {
+        this.tamanho = tamanho;
+    }
+
+    public String getPreco() {
+        return preco;
+    }
+
+    public void setPreco(String preco) {
+        this.preco = preco;
     }
 
     public String getBairro() {
@@ -58,7 +94,7 @@ public class Imoveis {
 
     @Override
     public String toString() {
-        return "Imovel {" + "bairro=" + bairro + ", rua=" + rua + ", cidade=" + cidade + ", descricao=" + descricao + ", num=" + num + '}';
-    }
+        return "Imoveis{" + "preco=" + preco + ", bairro=" + bairro + ", rua=" + rua + ", cidade=" + cidade + ", descricao=" + descricao + ", num=" + num + ", quartos=" + quartos + ", vagas=" + vagas + ", tamanho=" + tamanho + '}';
+    }   
     
 }
