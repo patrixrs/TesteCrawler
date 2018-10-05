@@ -94,7 +94,7 @@ public class Imoveis {
 
     @Override
     public String toString() {
-        return "Imoveis{" + "preco=" + preco + ", bairro=" + bairro + ", rua=" + rua + ", cidade=" + cidade + ", descricao=" + descricao + ", num=" + num + ", quartos=" + quartos + ", vagas=" + vagas + ", tamanho=" + tamanho + '}';
+        return "Dados: {" + "preco=" + preco + ", bairro=" + bairro + ", rua=" + rua + ", cidade=" + cidade + ", descricao=" + descricao + ", num=" + num + ", quartos=" + quartos + ", vagas=" + vagas + ", tamanho=" + tamanho + '}';
     }   
     
 }

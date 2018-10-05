@@ -56,7 +56,7 @@ public class Captura {
         Actions actions = new Actions(driver);
         
         //mudar as paginas da busca e capturar os resultados
-        for (int i = 1; i < 5; i++) {
+        //for (int i = 1; i < 5; i++) {
             //desce a pagina para captura completa
             //actions.sendKeys(Keys.END).perform();
             //captura os dados
@@ -71,10 +71,10 @@ public class Captura {
                 //strXpath = "//input[@name='txtPaginacao']";
                 driver.findElement(By.xpath("//a[@id='proximaPagina']")).click();                Thread.sleep(2000);
             }  */            
-        }  
+        //}  
         //imprime o resultado do site zap
         //imprimir(tdResultado1);
-        //System.out.print(delimit + filedate);
+        System.out.print("Arquivo salvo com sucesso!");
 
         //fecha o navegador
         driver.close();
